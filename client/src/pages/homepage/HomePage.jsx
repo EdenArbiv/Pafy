@@ -7,6 +7,7 @@ const HomePage = () => {
     <div>
         HomePage
         <Logo>Our Logo</Logo>
+        <p>michal push</p>
     </div>
   )
 }
