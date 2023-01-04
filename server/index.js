@@ -1,7 +1,10 @@
 const express = require('express')
 const {connectToMongoDatabase} = require('./database.js')
 const app = express()
-const port = 3001;
+require('dotenv').config()
+const jwt = require('jsonwebtoken')
+const port = process.env.PORT;
+const jwt_key =  process.env.JWT_KEY;
 const cors = require('cors')
 app.use(express.json())
 connectToMongoDatabase()
